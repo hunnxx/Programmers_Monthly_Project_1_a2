@@ -1,0 +1,235 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'fonts.css' %}" type="text/css">
+        <title>A2조 Monthly Web Project</title>
+    </head>
+
+    <body style="font-family: NanumReg;">
+        <header class="sticky-top bg-success">
+            <div class="container-fluid text-center text-white" style="font-family: NanumExtBold; font-size: 40pt;">
+                A2조 EDA 과제
+            </div>
+        </header>
+
+        <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
+            <div class="col">
+               
+                <div class="row pt-5">
+
+                    <div class="col-2">
+                        <div id="table-of-contents" class="list-group text-center" style="position: sticky; top: 100px; margin-top: 50px;">
+                                <a href="#" class="list-group-item list-group-item-action">데이터 전체보기</a>
+                                <a href="#hypo1" class="list-group-item list-group-item-action">가설 1</a>
+                                <a href="#hypo2" class="list-group-item list-group-item-action">가설 2</a>
+                                <a href="#hypo3" class="list-group-item list-group-item-action">가설 3</a>
+                                <a href="#hypo4" class="list-group-item list-group-item-action">가설 4</a>
+                                <a href="#result" class="list-group-item list-group-item-action">결론</a>
+                                <a href="#" class="list-group-item list-group-item-action">맨 위로</a>
+                        </div>
+                    </div>
+                
+                    <div class="col">
+                        <div class="container">
+                            <div class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#table-of-contents" data-bs-smooth-scroll="true" tabindex="0">
+
+                                <div class="row">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+
+                                    <h2 style="font-family: NanumBold;">데이터 전체 보기</h2>
+                                    <h5>가설 설명</h5>
+
+                                    {% for src in hypo1 %}
+                                    <div class="row mt-5">
+                                        <div class="col">
+                                            <!-- <img src={% static 'theory_1.png' %} class="rounded" loading="lazy" style="width: 500px"> -->
+                                            <img src="{% get_static_prefix %}{{src}}" class="rounded" loading="lazy" style="width: 500px">
+                                        </div>
+                                        <div class="col">
+                                            대충 넣어 놓은 이미지<br>
+                                            데이터 전체 분포 설명 추가 필요<br>
+                                            
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+
+                                </div>
+
+
+                                <div class="row">
+                                    <p id="hypo1"></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+
+                                    <h2 style="font-family: NanumBold;">가설 1</h2>
+                                    <h5>가설 설명</h5>
+
+                                    {% for src in hypo1 %}
+                                    <div class="row mt-5" style="border">
+                                        <div class="col">
+                                            <!-- <img src={% static 'theory_1.png' %} class="rounded" loading="lazy" style="width: 500px"> -->
+                                            <img src="{% get_static_prefix %}{{src}}" class="rounded" loading="lazy" style="width: 500px">
+                                        </div>
+                                        <div class="col mt-5">
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+
+                                </div>
+
+                                <div class="row">
+                                    <p id="hypo2"></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+
+                                    <h2 style="font-family: NanumBold;">가설 2</h2>
+                                    <h5>가설 설명</h5>
+
+                                    {% for src in hypo2 %}
+                                    <div class="row mt-5">
+                                        <div class="col">
+                                            <!-- <img src={% static 'theory_1.png' %} class="rounded" loading="lazy" style="width: 500px"> -->
+                                            <img src="{% get_static_prefix %}{{src}}" class="rounded" loading="lazy" style="width: 500px">
+                                        </div>
+                                        <div class="col mt-5">
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+
+                                </div>
+
+                                <div class="row">
+                                    <p id="hypo3"></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+
+                                    <h2 style="font-family: NanumBold;">가설 3</h2>
+                                    <h5>가설 설명</h5>
+
+                                    {% for src in hypo3 %}
+                                    <div class="row mt-5">
+                                        <div class="col">
+                                            <!-- <img src={% static 'theory_1.png' %} class="rounded" loading="lazy" style="width: 500px"> -->
+                                            <img src="{% get_static_prefix %}{{src}}" class="rounded" loading="lazy" style="width: 500px">
+                                        </div>
+                                        <div class="col mt-5">
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+
+                                <div class="row">
+                                    <p id="hypo4"></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+
+                                    <h2 style="font-family: NanumBold;">가설 4</h2>
+                                    <h5>가설 설명</h5>
+
+                                    {% for src in hypo4 %}
+                                    <div class="row mt-5">
+                                        <div class="col">
+                                            <!-- <img src={% static 'theory_1.png' %} class="rounded" loading="lazy" style="width: 500px"> -->
+                                            <img src="{% get_static_prefix %}{{src}}" class="rounded" loading="lazy" style="width: 500px">
+                                        </div>
+                                        <div class="col mt-5">
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                            description description description description description description description description
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+
+                                <div class="row">
+                                    <p id="result"></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+
+                                    <h2 style="font-family: NanumBold;">결론</h2>
+                                    <h5>
+                                        <ol>
+                                            <li>가설 1</li>
+                                                <ul>
+                                                    <li>ㄱㄱㄱㄱㄱㄱㄱㄱ</li>
+                                                    <li>ㄴㄴㄴㄴㄴㄴㄴㄴ</li>
+                                                </ul>
+                                            <li>가설 2</li>
+                                                <ul>
+                                                    <li>ㄱㄱㄱㄱㄱㄱㄱㄱ</li>
+                                                    <li>ㄴㄴㄴㄴㄴㄴㄴㄴ</li>
+                                                </ul>
+                                            <li>가설 3</li>
+                                                <ul>
+                                                    <li>ㄱㄱㄱㄱㄱㄱㄱㄱ</li>
+                                                    <li>ㄴㄴㄴㄴㄴㄴㄴㄴ</li>
+                                                </ul>
+                                            <li>가설 4</li>
+                                                <ul>
+                                                    <li>ㄱㄱㄱㄱㄱㄱㄱㄱ</li>
+                                                    <li>ㄴㄴㄴㄴㄴㄴㄴㄴ</li>
+                                                </ul>
+                                        </ol>
+                                    </h5>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
