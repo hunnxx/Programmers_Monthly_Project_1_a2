@@ -1,4 +1,4 @@
-# 프로그래머스 Monthly Project #1
+# [프로그래머스 인공지능 데브코스 6기] Monthly Project #1
 
 &nbsp;
 ## 데이터셋
