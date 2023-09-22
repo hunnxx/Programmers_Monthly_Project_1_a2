@@ -153,7 +153,6 @@
                                     {% for src in hypo1 %}
                                     <div class="row mt-5" style="border">
                                         <div class="col">
-                                            <!-- <img src={% static 'theory_1.png' %} class="rounded" loading="lazy" style="width: 500px"> -->
                                             <img src="{% get_static_prefix %}{{src}}" class="rounded" loading="lazy" style="width: 500px">
                                         </div>
                                         <div class="col mt-5">
@@ -179,7 +178,6 @@
                                     {% for src in hypo2 %}
                                     <div class="row mt-5">
                                         <div class="col">
-                                            <!-- <img src={% static 'theory_1.png' %} class="rounded" loading="lazy" style="width: 500px"> -->
                                             <img src="{% get_static_prefix %}{{src}}" class="rounded" loading="lazy" style="width: 500px">
                                         </div>
                                         <div class="col mt-5">
@@ -213,7 +211,6 @@
                                     {% for src in hypo3 %}
                                     <div class="row mt-5">
                                         <div class="col">
-                                            <!-- <img src={% static 'theory_1.png' %} class="rounded" loading="lazy" style="width: 500px"> -->
                                             <img src="{% get_static_prefix %}{{src}}" class="rounded" loading="lazy" style="width: 500px">
                                         </div>
                                         <div class="col mt-5">
@@ -248,18 +245,23 @@
                                     {% for src in hypo4 %}
                                     <div class="row mt-5">
                                         <div class="col">
-                                            <!-- <img src={% static 'theory_1.png' %} class="rounded" loading="lazy" style="width: 500px"> -->
                                             <img src="{% get_static_prefix %}{{src}}" class="rounded" loading="lazy" style="width: 500px">
                                         </div>
                                         <div class="col mt-5">
                                             {% if src == 'theory_4_1.png' %}
-                                                <li> 자녀 수 혹은 자녀 존재 여부와 컴플레인 비율은 정비례한다</li>
+                                                <li> 자녀 수가 적을 수록 컴플레인 건수는 적으나, 자녀 수 표본의 불균형으로 인해 불만 제기 빈도 자체는 큰 의미가 없음을 알 수 있다</li>
                                             {% endif %}
                                             {% if src == 'theory_4_2.png' %}
-                                                <li> 청소년 존재 여부와 컴플레인 비율은 관계가 없음 </li>
+                                                <li> 자녀 수에 따른 불만 제기 비율을 살펴봤을 때, 어린 자녀의 수가 많을 수록 불만 제기하는 비율이 더 놓은 것으로 나타나나,
+                                                    청소년 자녀의 수와 불만 제기 비율은 비례하지 않는 것으로 나타난다
+                                                </li>
+                                                <li>이에 자녀 수와 무관하게 단순 자녀 유무에 따른 불만 제기 비율을 살펴볼 필요성이 존재한다</li>
                                             {% endif %}
                                             {% if src == 'theory_4_3.png' %}
-                                                <li>청소년 수는 많을 수록 컴플레인 비율이 증가하는 경향이 보일 가능성이 있으나, 청소년 수 표본의 종류가(3 이상의 표본 필요) 부족해 증명 불가                                                </li>
+                                                <li>어린 자녀가 있는 가정의 경우, 불만 제기 비율이 어린 자녀가 없는 가정에 비해 약 2배로 눈에 띄게 높은 것을 알 수 있으나, 
+                                                    청소년 자녀가 있는 가정의 경우, 유의미한 차이가 존재하지 않는 것으로 나타난다
+                                                </li>
+                                                <li>하지만, 이는 청소년 자녀 수가 3이상인 표본이 존재하지 않아 엄밀한 증명은 불가한 것으로 보인다</li>
                                             {% endif %}
                                         </div>
                                     </div>
