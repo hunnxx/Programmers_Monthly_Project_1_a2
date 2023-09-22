@@ -54,3 +54,4 @@ pip freeze
 python manage.py runserver
 ```
 [프로젝트 결과물 확인](http://127.0.0.1:8000)
+![프로젝트 홈페이지](images/homepage.png)
