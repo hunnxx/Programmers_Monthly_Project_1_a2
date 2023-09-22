@@ -1,9 +1,15 @@
 # [프로그래머스 인공지능 데브코스 6기] Monthly Project #1
 
+## 프로젝트 - 데이터 시각화 웹 페이지 만들기
+분석할 데이터를 선정 후 EDA를 같이 만들어보고 웹 페이지로 시각화
+&nbsp;
+### 분석 주제 
+고객 유형과 각각의 지난 2년간 와인, 육류, 생선, 금 등에 지출한 금액에 따른 상관관계 분석
 &nbsp;
 ## 데이터셋
 Kaggle - [Customer Personality Analysis](https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis)  
 ![Kaggle-Customer-Personality_Analysis_Dataset](images/customer_personality_analysis_dataset.png)
+
 
 &nbsp;
 ## 환경 설정
