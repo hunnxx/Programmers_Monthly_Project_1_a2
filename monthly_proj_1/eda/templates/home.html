@@ -118,19 +118,23 @@
                                     {% for src in hypo0 %}
                                     <div class="row mt-5">
                                         <div class="col">
-                                            <!-- <img src={% static 'theory_1.png' %} class="rounded" loading="lazy" style="width: 500px"> -->
                                             <img src="{% get_static_prefix %}{{src}}" class="rounded" loading="lazy" style="width: 500px">
                                         </div>
                                         <div class="col">
+
                                             {% if src == 'theory_0_1.png' %}
-                                                <li> 1번 설명 </li>
+                                                <li>2015년 기준 4-50대 고객이 주를 이루고 있다</li>
+                                                <li>2012-2014년에 신규가입한 고객들에 대한 데이터이다</li>
+                                                <li>수입은 주로 10만달러 이하 구간에 분포해 있다</li>
                                             {% endif %}
+
                                             {% if src == 'theory_0_2.png' %}
-                                                <li> 2번 설명 </li>
+                                                <li>컴플레인 경험이 있는 고객이 대다수인 것으로 나타나며, 자녀가 없는 가정이 다수인 것으로 드러난다</li>
+                                                <li>주로 와인에 많은 지출을 하는 것으로 보이며, 다음으로 육류에의 지출이 높은 것으로 나타난다</li>
                                             {% endif %}
 
                                             {% if src == 'theory_0_3.png' %}
-                                                <li> 3번 설명 </li>
+                                                <li>모든 소비영역에서 지출의 양은 크게 차이가 있으나, 지출의 패턴은 유사한 것으로 나타난다</li>
                                             {% endif %}
                                             
                                         </div>
@@ -148,7 +152,7 @@
                                     <p></p>
 
                                     <h2 style="font-family: NanumBold;">가설 1</h2>
-                                    <h5>고객 가구의 자녀 수에 따라 지난 2년간 과자에 지출한 금액이 차이가 있을 것이다.</h5>
+                                    <h5>고객 가구의 자녀 수에 따라 지난 2년간 간식거리에 지출한 금액이 차이가 있을 것이다</h5>
 
                                     {% for src in hypo1 %}
                                     <div class="row mt-5" style="border">
@@ -157,7 +161,8 @@
                                         </div>
                                         <div class="col mt-5">
                                             {% if src == 'theory_1.png' %}
-                                                <li> 설명과 그래프를 분할하는게 좋을듯 하네오</li>
+                                                <li>금을 제외한 모든 소비영역에서 자녀수가 증가함에 따라 지출 금액이 감소하는 경향이 드러난다</li>
+                                                <li>자녀 수에 따라 간식거리의 지출이 늘어날 것으로 예상했으나, 그렇지 않은 것으로 나타났다</li>
                                             {% endif %}
                                         </div>
                                     </div>
@@ -173,7 +178,7 @@
                                     <p></p>
 
                                     <h2 style="font-family: NanumBold;">가설 2</h2>
-                                    <h5>고객의 결혼 상태에 따라 지난 2년간 육류, 생선에 지출한 금액이 차이가 있을 것이다.</h5>
+                                    <h5>고객의 결혼 상태에 따라 지난 2년간 육류, 생선에 지출한 금액이 차이가 있을 것이다</h5>
                                     
                                     {% for src in hypo2 %}
                                     <div class="row mt-5">
@@ -182,14 +187,17 @@
                                         </div>
                                         <div class="col mt-5">
                                             {% if src == 'theory_2_1.png' %}
-                                            <li> 결혼상태에 따라 Alone의 경우 매우 낮은 소비량을 보였다. </li>
-                                            <li> Yolo는 와인과 금에 대한 소비가 다른 소비보다 월등히 높다.</li>
-                                            <li> 고기, 생선, 과일, 금의 경우 Absurd 유형이 가장 많이 산다는 것을 알 수 있다. </li>
-                                            <li> 결론적으로 고기, 생선을 사는 사람들은 Absurd, Yolo, Alone을 제외한 나머지는 비슷한 금액을 지출하며 산다. </li>
-                                            <li> 상대적으로 Absurd는 큰 지출을, Yolo, Alone는 적은 지출을 하는 모습을 보인다.</li>
+                                            <li>결혼상태에 따라 Alone의 경우 매우 낮은 소비량을 보였다</li>
+                                            <li>Yolo는 와인과 금에 대한 소비가 다른 소비보다 월등히 높다</li>
+                                            <li>고기, 생선, 과일, 금의 경우 Absurd 유형이 가장 많이 산다는 것을 알 수 있다</li>
+                                            <li>결론적으로 고기, 생선을 사는 사람들은 Absurd, Yolo, Alone을 제외한 나머지는 비슷한 금액을 지출하며 산다</li>
+                                            <li>상대적으로 Absurd는 큰 지출을, Yolo, Alone는 적은 지출을 하는 모습을 보인다</li>
                                             {% endif %}
+
                                             {% if src == 'theory_2_2.png' %}
-                                            
+                                            <li>모든 소비 영역에서 전반적으로 유사한 소비 패턴이 드러나나, 금의 경우, "기타" 가정 형태의 지출이 가장 많은 것으로 나타난다</li>
+                                            <li>식품류의 경우, "이혼" 혹은 "사별"한 가정이 가장 많은 지출을 보인다</li>
+                                            <li>결혼 여부(결혼/독신)의 경우 소비 패턴에 큰 차이를 보이지는 않는 것으로 나타난다</li>
                                             {% endif %}
 
                                         </div>
@@ -206,7 +214,7 @@
                                     <p></p>
 
                                     <h2 style="font-family: NanumBold;">가설 3</h2>
-                                    <h5>고객의 연간 가구 소득에 따라 지난 2년간 금에 지출된 금액이 차이가 있을 것이다.</h5>
+                                    <h5>고객의 연간 가구 소득에 따라 지난 2년간 금에 지출된 금액이 차이가 있을 것이다</h5>
 
                                     {% for src in hypo3 %}
                                     <div class="row mt-5">
@@ -240,7 +248,7 @@
                                     <p></p>
 
                                     <h2 style="font-family: NanumBold;">가설 4</h2>
-                                    <h5>고객 가구의 자녀 수나 청소년 수가 높을 수록 불만 사항을 제기한 경우가 비례할 것이다.</h5>
+                                    <h5>고객 가구의 자녀 수나 청소년 수가 높을 수록 불만 사항을 제기한 경우가 비례할 것이다</h5>
 
                                     {% for src in hypo4 %}
                                     <div class="row mt-5">
@@ -281,8 +289,8 @@
                                         <ul>
                                             <li>가설 1</li>
                                                 <ul>
-                                                    <li>자녀수와 식습관 지출은 반비례한다</li>
-                                                    <li>반대로, 자녀수와 금 소비는 비례한다</li>
+                                                    <li>자녀 수와 식습관 지출은 반비례한다</li>
+                                                    <li>반대로, 자녀 수와 금 소비는 비례한다</li>
                                                 </ul>
                                             <li>가설 2</li>
                                                 <ul>
@@ -297,7 +305,7 @@
                                             <li>가설 4</li>
                                                 <ul>
                                                     <li>자녀 수 혹은 자녀 존재 여부와 컴플레인 비율은 정비례한다</li>
-                                                    <li>아래의 그래프를 통해 청소년 존재 여부와 컴플레인 비율은 관계가 없음을 확인할 수 있다</li>
+                                                    <li>아래의 그래프를 통해 청소년 자녀 존재 여부와 컴플레인 비율은 관계가 없음을 확인할 수 있다</li>
                                                     <li>그러나 청소년 자녀 수가 3 이상인 표본이 없어 3 이상일 때는 컴플레인 비율이 증가할지는 증명이 불가하다</li>
                                                 </ul>
                                         </ul>
@@ -318,7 +326,7 @@
             </style>
             <div class="text-center text-white" style="font-family: NanumExtReg; font-size: 15pt;">
                 <a class="git_link" href="https://github.com/hunnxx"><img src="{% static 'github_icon_white.png' %}" width="20px" class="mb-2">김나훈 /</a>  
-                <a class="git_link" href="https://github.com/Silinu1016"><img src="{% static 'github_icon_white.png' %}" width="20px" class="mb-2">김수 /</a>  
+                <a class="git_link" href="https://github.com/Silinu1016/Monthly_Project1.git"><img src="{% static 'github_icon_white.png' %}" width="20px" class="mb-2">김수 /</a>  
                 <a class="git_link" href="https://github.com/LJMoonCode"><img src="{% static 'github_icon_white.png' %}" width="20px" class="mb-2">이재문 /</a>  
                 <a class="git_link" href="https://github.com/ehdwn1tp"><img src="{% static 'github_icon_white.png' %}" width="20px" class="mb-2">임동주</a> 
             </div>
