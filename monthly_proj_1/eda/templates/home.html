@@ -12,8 +12,14 @@
     <body style="font-family: NanumReg;">
     
         <header class="sticky-top bg-success">
-            <div class="container-fluid text-center text-white" style="font-family: NanumExtBold; font-size: 40pt;">
-                고객 소비패턴을 통한 페르소나 분석
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-6 container-fluid text-center text-white" style="font-family: NanumExtBold; font-size: 40pt;">
+                    고객 소비패턴을 통한 페르소나 분석
+                </div>
+                <div class="col-2 text-white">
+                    <span class="align-bottom" style="font-size: 15pt;">Github Repository </span><a href="https://github.com/hunnxx/Programmers_Monthly_Project_1_a2"><img src="{% static 'github_icon_white.png' %}" width="50px" class="pt-3"></a>
+                </div>
             </div>
         </header>
 
@@ -99,7 +105,6 @@
                                     {% for src in hypo1 %}
                                     <div class="row mt-5">
                                         <div class="col">
-                                            <!-- <img src={% static 'theory_1.png' %} class="rounded" loading="lazy" style="width: 500px"> -->
                                             <img src="{% get_static_prefix %}{{src}}" class="rounded" loading="lazy" style="width: 500px">
                                         </div>
                                         <div class="col">
@@ -242,7 +247,7 @@
 
                                     <h2 style="font-family: NanumBold;">결론</h2>
                                     <h5>
-                                        <ol>
+                                        <ul>
                                             <li>가설 1</li>
                                                 <ul>
                                                     <li>자녀수와 식습관 지출은 반비례한다</li>
@@ -264,7 +269,7 @@
                                                     <li>아래의 그래프를 통해 청소년 존재 여부와 컴플레인 비율은 관계가 없음을 확인할 수 있다</li>
                                                     <li>그러나 청소년 자녀 수가 3 이상인 표본이 없어 3 이상일 때는 컴플레인 비율이 증가할지는 증명이 불가하다</li>
                                                 </ul>
-                                        </ol>
+                                        </ul>
                                     </h5>
                                 </div>
                             </div>
@@ -273,5 +278,16 @@
                 </div>
             </div>
         </div>
+
+        <div id='wrapper' class="container-fluid bg-success">
+            <div class="text-center text-white" style="font-family: NanumExtReg; font-size: 15pt;">
+                <a href="https://github.com/hunnxx"><img src="{% static 'github_icon_white.png' %}" width="20px" class="mb-2"></a> 김나훈 / 
+                <a href="https://github.com/Silinu1016"><img src="{% static 'github_icon_white.png' %}" width="20px" class="mb-2"></a> 김수 / 
+                <a href="https://github.com/LJMoonCode"><img src="{% static 'github_icon_white.png' %}" width="20px" class="mb-2"></a> 이재문 / 
+                <a href="https://github.com/ehdwn1tp"><img src="{% static 'github_icon_white.png' %}" width="20px" class="mb-2"></a> 임동주
+            </div>
+        </div>
+        <footer></footer>
+
     </body>
 </html>
