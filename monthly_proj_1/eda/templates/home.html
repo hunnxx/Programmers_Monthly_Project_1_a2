@@ -20,7 +20,6 @@
                 <div class="col-2 text-white">
                     <span class="align-bottom" style="font-size: 15pt;">Github Repository </span><a href="https://github.com/hunnxx/Programmers_Monthly_Project_1_a2"><img src="{% static 'github_icon_white.png' %}" width="50px" class="pt-3"></a>
                 </div>
-            </div>
         </header>
 
         <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
@@ -70,13 +69,11 @@
                                                 설명
                                             </li>
                                             <ul>
-                                                <li>
-                                                    고객 성격 분석은 기업의 이상적인 고객에 대한 상세한 분석입니다.<br>
-                                                    이를 통해 기업은 고객을 더 잘 이해하고 다양한 유형의 고객의 특정 요구 사항, 행동 및 우려 사항에 따라 제품을 더 쉽게 수정할 수 있습니다.<br>
-                                                    고객 성격 분석은 기업이 다양한 유형의 고객 세그먼트의 대상 고객을 기반으로 제품을 수정하는 데 도움이 됩니다.<br>
-                                                    예를 들어, 회사 데이터베이스의 모든 고객에게 신제품을 마케팅하기 위해 비용을 지출하는 대신<br>
-                                                    회사는 어떤 고객 세그먼트가 제품을 구매할 가능성이 가장 높은지 분석한 다음 해당 특정 세그먼트에만 제품을 마케팅할 수 있습니다.
-                                                </li>
+                                                <li> 고객 성격 분석은 기업의 이상적인 고객에 대한 상세한 분석입니다. </li>
+                                                <li> 이를 통해 기업은 고객을 더 잘 이해하고 다양한 유형의 고객의 특정 요구 사항, 행동 및 우려 사항에 따라 제품을 더 쉽게 수정할 수 있습니다.</li>
+                                                <li> 고객 성격 분석은 기업이 다양한 유형의 고객 세그먼트의 대상 고객을 기반으로 제품을 수정하는 데 도움이 됩니다.</li>
+                                                <li> 예를 들어, 회사 데이터베이스의 모든 고객에게 신제품을 마케팅하기 위해 비용을 지출하는 대신 </li>
+                                                <li> 회사는 어떤 고객 세그먼트가 제품을 구매할 가능성이 가장 높은지 분석한 다음 해당 특정 세그먼트에만 제품을 마케팅할 수 있습니다. </li>
                                             </ul>
                                             <li>
                                                 출처
@@ -98,18 +95,43 @@
                                     <p></p>
                                     <p></p>
                                     <p></p>
-
                                     <h2 style="font-family: NanumBold;">데이터 전체 보기</h2>
-                                    <h5>가설 설명</h5>
+                                    <h4>
+                                        <ul>
+                                            <li>
+                                                가설
+                                            </li>
+                                            <h5>
+                                                <ul>
+                                                    <li> 고객 가구의 자녀 수에 따라 지난 2년간 과자에 지출한 금액이 차이가 있을 것이다. </li>
+                                                    <li> 고객의 결혼 상태에 따라 지난 2년간 육류, 생선에 지출한 금액이 차이가 있을 것이다. </li>
+                                                    <li> 고객의 연간 가구 소득에 따라 지난 2년간 금에 지출된 금액이 차이가 있을 것이다.</li>    
+                                                    <li> 고객 가구의 자녀 수나 청소년 수가 높을 수록 불만 사항을 제기한 경우가 비례할 것이다. </li> 
+                                                </ul>
+                                            </h5>
+                                            
+                                            
+                                        </ul>
+                                    </h4>
                                     
-                                    {% for src in hypo1 %}
+                                                                       
+                                    {% for src in hypo0 %}
                                     <div class="row mt-5">
                                         <div class="col">
+                                            <!-- <img src={% static 'theory_1.png' %} class="rounded" loading="lazy" style="width: 500px"> -->
                                             <img src="{% get_static_prefix %}{{src}}" class="rounded" loading="lazy" style="width: 500px">
                                         </div>
                                         <div class="col">
-                                            대충 넣어 놓은 이미지<br>
-                                            데이터 전체 분포 설명 추가 필요<br>
+                                            {% if src == 'theory_0_1.png' %}
+                                                <li> 1번 설명 </li>
+                                            {% endif %}
+                                            {% if src == 'theory_0_2.png' %}
+                                                <li> 2번 설명 </li>
+                                            {% endif %}
+
+                                            {% if src == 'theory_0_3.png' %}
+                                                <li> 3번 설명 </li>
+                                            {% endif %}
                                             
                                         </div>
                                     </div>
@@ -135,13 +157,9 @@
                                             <img src="{% get_static_prefix %}{{src}}" class="rounded" loading="lazy" style="width: 500px">
                                         </div>
                                         <div class="col mt-5">
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
+                                            {% if src == 'theory_1.png' %}
+                                                <li> 설명과 그래프를 분할하는게 좋을듯 하네오</li>
+                                            {% endif %}
                                         </div>
                                     </div>
                                     {% endfor %}
@@ -157,7 +175,7 @@
 
                                     <h2 style="font-family: NanumBold;">가설 2</h2>
                                     <h5>고객의 결혼 상태에 따라 지난 2년간 육류, 생선에 지출한 금액이 차이가 있을 것이다.</h5>
-        
+                                    
                                     {% for src in hypo2 %}
                                     <div class="row mt-5">
                                         <div class="col">
@@ -165,13 +183,17 @@
                                             <img src="{% get_static_prefix %}{{src}}" class="rounded" loading="lazy" style="width: 500px">
                                         </div>
                                         <div class="col mt-5">
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
+                                            {% if src == 'theory_2_1.png' %}
+                                            <li> 결혼상태에 따라 Alone의 경우 매우 낮은 소비량을 보였다. </li>
+                                            <li> Yolo는 와인과 금에 대한 소비가 다른 소비보다 월등히 높다.</li>
+                                            <li> 고기, 생선, 과일, 금의 경우 Absurd 유형이 가장 많이 산다는 것을 알 수 있다. </li>
+                                            <li> 결론적으로 고기, 생선을 사는 사람들은 Absurd, Yolo, Alone을 제외한 나머지는 비슷한 금액을 지출하며 산다. </li>
+                                            <li> 상대적으로 Absurd는 큰 지출을, Yolo, Alone는 적은 지출을 하는 모습을 보인다.</li>
+                                            {% endif %}
+                                            {% if src == 'theory_2_2.png' %}
+                                            
+                                            {% endif %}
+
                                         </div>
                                     </div>
                                     {% endfor %}
@@ -195,13 +217,18 @@
                                             <img src="{% get_static_prefix %}{{src}}" class="rounded" loading="lazy" style="width: 500px">
                                         </div>
                                         <div class="col mt-5">
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
+                                            {% if src == 'theory_3_1.png' %}
+                                                <li> 전체적인 분포를 보기는 힘든 그래프지만 확실하게 소득이 엄청 높은 사람의 금투자량이 적은 특이점과 소득이 없는 사람이 금을 엄청 사는 특이점을 보인다 </li>
+                                            {% endif %}
+                                            {% if src == 'theory_3_2.png' %}
+                                                <li> 일반적으로는 소득이 높을 수록 분포의 표준 편차가 크며 소득이 적다</li>
+                                                <li> 가장 빈도가 많은 금 구매량이 0원인 것으로 보아 소득이 적을 수록 금을 아예 구매하지 않는 인구가 많다</li>
+                                            {% endif %}
+
+                                            {% if src == 'theory_3_3.png' %}
+                                                <li> 1번 그래프와 2번 그래프를 합쳐서 봤을 때 전체적으로 금 구매량이 저소득일 수록 없는 사람이 많아 평균 금 구매량은 소득과 비례하는 모습을 보여준다</li>
+                                                <li> 다만 소득이 존재하지 않을때는 조금 올라간 모습을 보여주는데 이는 이미 자산이 좀 있는 사람이 돈을 벌지 않고 투자만 하여 소득이 적은 사람보다 투자량이 높을것으로 추정된다</li>
+                                            {% endif %}
                                         </div>
                                     </div>
                                     {% endfor %}
@@ -225,13 +252,15 @@
                                             <img src="{% get_static_prefix %}{{src}}" class="rounded" loading="lazy" style="width: 500px">
                                         </div>
                                         <div class="col mt-5">
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
-                                            description description description description description description description description
+                                            {% if src == 'theory_4_1.png' %}
+                                                <li> 자녀 수 혹은 자녀 존재 여부와 컴플레인 비율은 정비례한다</li>
+                                            {% endif %}
+                                            {% if src == 'theory_4_2.png' %}
+                                                <li> 청소년 존재 여부와 컴플레인 비율은 관계가 없음 </li>
+                                            {% endif %}
+                                            {% if src == 'theory_4_3.png' %}
+                                                <li>청소년 수는 많을 수록 컴플레인 비율이 증가하는 경향이 보일 가능성이 있으나, 청소년 수 표본의 종류가(3 이상의 표본 필요) 부족해 증명 불가                                                </li>
+                                            {% endif %}
                                         </div>
                                     </div>
                                     {% endfor %}
@@ -288,6 +317,5 @@
             </div>
         </div>
         <footer></footer>
-
     </body>
 </html>
